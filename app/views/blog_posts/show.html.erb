@@ -1,3 +1,13 @@
-<%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
-<h1><%= @blog_post.title %></h1>
+<!-- app/views/blog_posts/show.html.erb -->
+
+<h1>Просмотр поста</h1>
+<h2><%= @blog_post.title %></h2>
 <%= @blog_post.body %>
+
+<% if @blog_post.image.attached? %>
+  <%= image_tag url_for(@blog_post.image), alt: 'Blog Post Image' %>
+<% end %>
+
+<br><br>
+<%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
+<%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>
