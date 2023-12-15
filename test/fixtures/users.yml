@@ -4,8 +4,17 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
+one:
+  email: user@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'secret_password') %>
+  reset_password_token: <%= Devise.token_generator.generate(User, :reset_password_token) %>
+  reset_password_sent_at: <%= 1.day.ago %> # Set an appropriate time in the past
+  remember_created_at: <%= 1.hour.ago %>   # Set an appropriate time in the past
+
+two:
+  email: another_user@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'another_secret_password') %>
+  reset_password_token: <%= Devise.token_generator.generate(User, :reset_password_token) %>
+  reset_password_sent_at: <%= 2.days.ago %> # Set an appropriate time in the past
+  remember_created_at: <%= 2.hours.ago %>   # Set an appropriate time in the past
 # column: value

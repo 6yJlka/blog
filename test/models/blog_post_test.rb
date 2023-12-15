@@ -1,7 +1,8 @@
-require "test_helper"
+require 'test_helper'
 
 class BlogPostTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test 'should not save blog post without title' do
+    post = BlogPost.new
+    assert_not post.save, 'Saved the blog post without a title'
+  end
 end
