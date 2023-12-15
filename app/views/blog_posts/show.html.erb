@@ -5,7 +5,7 @@
 <%= @blog_post.body %>
 
 <% if @blog_post.image.attached? %>
-  <%= image_tag url_for(@blog_post.image), alt: 'Blog Post Image' %>
+  <%= image_tag url_for(@blog_post.image), alt: 'Blog Post Image', class: 'blog-post-image' %>
 <% end %>
 
 <br><br>

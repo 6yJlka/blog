@@ -1,5 +1,15 @@
-
 <h1>Anonymous chat League of Legends</h1>
+
+<style>
+    .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+    }
+</style>
 
 <% @blog_posts.each do |blog_post| %>
   <h2><%= blog_post.title %></h2>
@@ -8,7 +18,11 @@
     <%= image_tag url_for(blog_post.image), alt: 'Blog Post Image', class: 'blog-post-image' %>
   <% end %>
 
-  <%= blog_post.body %>
+  <div class="alert">
+    <%= blog_post.body %>
+  </div>
+
   <br><br>
   <%= link_to "Edit", edit_blog_post_path(blog_post) if user_signed_in? %>
 <% end %>
+

@@ -4,7 +4,7 @@ class BlogPostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_blog_post, except: [:index, :new, :create]
   before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
-  before_action :authorize_user, only: [:destroy]
+  before_action :authorize_user, only: [:destroy, :edit, :update]
 
   def index
     @blog_posts = BlogPost.all
@@ -34,7 +34,7 @@ class BlogPostsController < ApplicationController
 
   def update
     if @blog_post.update(blog_post_params)
-      redirect_to @blog_post
+      redirect_to root_path
     else
       render :edit, status: :unprocessable_entity
     end
@@ -60,7 +60,7 @@ class BlogPostsController < ApplicationController
   def authorize_user
     # Проверка, что текущий пользователь имеет право удалять этот пост
     unless current_user == @blog_post.user
-      redirect_to root_path, alert: 'You are not authorized to delete this post.'
+      redirect_to root_path, alert: 'You are not authorized to delete or edit this post.'
     end
   end
 
