@@ -3,6 +3,8 @@
 class BlogPostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_blog_post, except: [:index, :new, :create]
+  before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_user, only: [:destroy]
 
   def index
     @blog_posts = BlogPost.all
@@ -20,11 +22,12 @@ class BlogPostsController < ApplicationController
     @blog_post.user = current_user if user_signed_in?
 
     if @blog_post.save
-      redirect_to @blog_post
+      redirect_to root_path, notice: 'Post was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
   end
+
 
   def edit
   end
@@ -39,13 +42,13 @@ class BlogPostsController < ApplicationController
 
   def destroy
     @blog_post.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: 'Post was successfully destroyed.'
   end
 
   private
 
   def blog_post_params
-    params.require(:blog_post).permit(:title, :body)
+    params.require(:blog_post).permit(:title, :body, :image)
   end
 
   def set_blog_post
@@ -53,4 +56,12 @@ class BlogPostsController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     redirect_to root_path
   end
+
+  def authorize_user
+    # Проверка, что текущий пользователь имеет право удалять этот пост
+    unless current_user == @blog_post.user
+      redirect_to root_path, alert: 'You are not authorized to delete this post.'
+    end
+  end
+
 end

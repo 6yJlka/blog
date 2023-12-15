@@ -1,8 +1,14 @@
-<h1>My Blog</h1>
+
+<h1>Anonymous chat League of Legends</h1>
 
 <% @blog_posts.each do |blog_post| %>
-  <div>
-    <h2><%= link_to blog_post.title, blog_post_path(blog_post.id) %></h2>
-    <%= blog_post.body %>
-  </div>
+  <h2><%= blog_post.title %></h2>
+
+  <% if blog_post.image.attached? %>
+    <%= image_tag url_for(blog_post.image), alt: 'Blog Post Image', class: 'blog-post-image' %>
+  <% end %>
+
+  <%= blog_post.body %>
+  <br><br>
+  <%= link_to "Edit", edit_blog_post_path(blog_post) if user_signed_in? %>
 <% end %>

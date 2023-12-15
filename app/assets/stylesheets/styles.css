@@ -36,11 +36,57 @@ body {
     background-color: #2a75a7; /* Цвет при наведении */
 }
 
+/* app/assets/stylesheets/application.css (или application.scss, в зависимости от вашей конфигурации) */
+
 .content-container {
+    position: relative;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #2b2b2b;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Минимальная высота 100% вьюпорта */
 }
+
+
+.blog-post-image {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #f1c472; /* Задайте желаемый цвет */
+    text-decoration: none; /* Если вы не хотите подчеркивания для обычных ссылок */
+}
+
+a:hover {
+    color: #e0670b; /* Задайте цвет при наведении курсора мыши */
+}
+
+.profile-avatar-container {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(255, 181, 58); /* Красный свет вокруг рамки */
+    transition: box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.profile-avatar-container:hover .profile-avatar {
+    box-shadow: 0 0 20px rgb(242, 141, 255); /* Синий свет вокруг рамки при наведении */
+}
+/* Добавьте этот стиль для смещения контента под фотографией */
+.profile-info {
+    margin-top: 10px; /* Высота фотографии + отступ, измените по необходимости */
+}
+
+
+
+

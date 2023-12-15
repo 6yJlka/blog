@@ -19,6 +19,7 @@
 <p class="alert"><%= alert %></p>
 
 <div class="header">
+
   <div class="auth-links">
     <% if user_signed_in? %>
       <%= link_to "New blog post", new_blog_post_path, class: 'auth-link' %>

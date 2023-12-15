@@ -1,0 +1,48 @@
+/* app/assets/stylesheets/profile_edit.css */
+
+body {
+    background-color: #1a1a1a; /* темный фон, похожий на фон в Лиге Легенд */
+    color: #ffffff; /* белый текст для контраста */
+}
+
+h1 {
+    color: #4caf50; /* зеленый цвет для заголовка */
+}
+h2 {
+    color: #2bd0b8;
+}
+form {
+    max-width: 300px; /* установка максимальной ширины формы */
+    margin: 0 auto; /* выравнивание по центру */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #4caf50; /* зеленый цвет для меток */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #333; /* темный фон для полей ввода */
+    color: #ffffff; /* белый текст в полях ввода */
+}
+
+input[type="submit"] {
+    background-color: #4caf50; /* зеленый цвет для кнопки отправки */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* зеленый цвет при наведении на кнопку */
+}
