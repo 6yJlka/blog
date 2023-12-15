@@ -199,104 +199,104 @@
   </component>
   <component name="RailsPaths" isManagedAutomatically="true">
     <entry key="app">
-      <value>file://$MODULE_DIR$/../prog\app</value>
+      <value>file://$MODULE_DIR$/../Blog\app</value>
     </entry>
     <entry key="app/assets">
-      <value>file://$MODULE_DIR$/../prog\app/assets</value>
+      <value>file://$MODULE_DIR$/../Blog\app/assets</value>
     </entry>
     <entry key="app/channels">
-      <value>file://$MODULE_DIR$/../prog\app/channels</value>
+      <value>file://$MODULE_DIR$/../Blog\app/channels</value>
     </entry>
     <entry key="app/controllers">
-      <value>file://$MODULE_DIR$/../prog\app/controllers</value>
+      <value>file://$MODULE_DIR$/../Blog\app/controllers</value>
     </entry>
     <entry key="app/helpers">
-      <value>file://$MODULE_DIR$/../prog\app/helpers</value>
+      <value>file://$MODULE_DIR$/../Blog\app/helpers</value>
     </entry>
     <entry key="app/mailers">
-      <value>file://$MODULE_DIR$/../prog\app/mailers</value>
+      <value>file://$MODULE_DIR$/../Blog\app/mailers</value>
     </entry>
     <entry key="app/models">
-      <value>file://$MODULE_DIR$/../prog\app/models</value>
+      <value>file://$MODULE_DIR$/../Blog\app/models</value>
     </entry>
     <entry key="app/views">
-      <value>file://$MODULE_DIR$/../prog\app/views</value>
+      <value>file://$MODULE_DIR$/../Blog\app/views</value>
     </entry>
     <entry key="config">
-      <value>file://$MODULE_DIR$/../prog\config</value>
+      <value>file://$MODULE_DIR$/../Blog\config</value>
     </entry>
     <entry key="config/cable">
-      <value>file://$MODULE_DIR$/../prog\config/cable.yml</value>
+      <value>file://$MODULE_DIR$/../Blog\config/cable.yml</value>
     </entry>
     <entry key="config/database">
-      <value>file://$MODULE_DIR$/../prog\config/database.yml</value>
+      <value>file://$MODULE_DIR$/../Blog\config/database.yml</value>
     </entry>
     <entry key="config/environment">
-      <value>file://$MODULE_DIR$/../prog\config/environment.rb</value>
+      <value>file://$MODULE_DIR$/../Blog\config/environment.rb</value>
     </entry>
     <entry key="config/environments">
-      <value>file://$MODULE_DIR$/../prog\config/environments</value>
+      <value>file://$MODULE_DIR$/../Blog\config/environments</value>
     </entry>
     <entry key="config/initializers">
-      <value>file://$MODULE_DIR$/../prog\config/initializers</value>
+      <value>file://$MODULE_DIR$/../Blog\config/initializers</value>
     </entry>
     <entry key="config/locales">
-      <value>file://$MODULE_DIR$/../prog\config/locales</value>
+      <value>file://$MODULE_DIR$/../Blog\config/locales</value>
     </entry>
     <entry key="config/routes">
-      <value>file://$MODULE_DIR$/../prog\config/routes</value>
+      <value>file://$MODULE_DIR$/../Blog\config/routes</value>
     </entry>
     <entry key="config/routes.rb">
-      <value>file://$MODULE_DIR$/../prog\config/routes.rb</value>
+      <value>file://$MODULE_DIR$/../Blog\config/routes.rb</value>
     </entry>
     <entry key="config/secrets">
-      <value>file://$MODULE_DIR$/../prog\config</value>
+      <value>file://$MODULE_DIR$/../Blog\config</value>
     </entry>
     <entry key="db">
-      <value>file://$MODULE_DIR$/../prog\db</value>
+      <value>file://$MODULE_DIR$/../Blog\db</value>
     </entry>
     <entry key="db/migrate">
-      <value>file://$MODULE_DIR$/../prog\db/migrate</value>
+      <value>file://$MODULE_DIR$/../Blog\db/migrate</value>
     </entry>
     <entry key="db/seeds.rb">
-      <value>file://$MODULE_DIR$/../prog\db/seeds.rb</value>
+      <value>file://$MODULE_DIR$/../Blog\db/seeds.rb</value>
     </entry>
     <entry key="lib">
-      <value>file://$MODULE_DIR$/../prog\lib</value>
+      <value>file://$MODULE_DIR$/../Blog\lib</value>
     </entry>
     <entry key="lib/assets">
-      <value>file://$MODULE_DIR$/../prog\lib/assets</value>
+      <value>file://$MODULE_DIR$/../Blog\lib/assets</value>
     </entry>
     <entry key="lib/tasks">
-      <value>file://$MODULE_DIR$/../prog\lib/tasks</value>
+      <value>file://$MODULE_DIR$/../Blog\lib/tasks</value>
     </entry>
     <entry key="lib/templates">
-      <value>file://$MODULE_DIR$/../prog\lib/templates</value>
+      <value>file://$MODULE_DIR$/../Blog\lib/templates</value>
     </entry>
     <entry key="log">
-      <value>file://$MODULE_DIR$/../prog\log/development.log</value>
+      <value>file://$MODULE_DIR$/../Blog\log/development.log</value>
     </entry>
     <entry key="public">
-      <value>file://$MODULE_DIR$/../prog\public</value>
+      <value>file://$MODULE_DIR$/../Blog\public</value>
     </entry>
     <entry key="public/javascripts">
-      <value>file://$MODULE_DIR$/../prog\public/javascripts</value>
+      <value>file://$MODULE_DIR$/../Blog\public/javascripts</value>
     </entry>
     <entry key="public/stylesheets">
-      <value>file://$MODULE_DIR$/../prog\public/stylesheets</value>
+      <value>file://$MODULE_DIR$/../Blog\public/stylesheets</value>
     </entry>
     <entry key="test/mailers/previews">
       <value>file://$MODULE_DIR$/test/mailers/previews</value>
-      <value>file://$MODULE_DIR$/../prog\test/mailers/previews</value>
+      <value>file://$MODULE_DIR$/../Blog\test/mailers/previews</value>
     </entry>
     <entry key="tmp">
-      <value>file://$MODULE_DIR$/../prog\tmp</value>
+      <value>file://$MODULE_DIR$/../Blog\tmp</value>
     </entry>
     <entry key="vendor">
-      <value>file://$MODULE_DIR$/../prog\vendor</value>
+      <value>file://$MODULE_DIR$/../Blog\vendor</value>
     </entry>
     <entry key="vendor/assets">
-      <value>file://$MODULE_DIR$/../prog\vendor/assets</value>
+      <value>file://$MODULE_DIR$/../Blog\vendor/assets</value>
     </entry>
   </component>
   <component name="RakeTasksCache">

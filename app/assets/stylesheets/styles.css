@@ -1,0 +1,46 @@
+/* app/assets/stylesheets/styles.css */
+
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2b2b2b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Изменено на распределение между элементами */
+    align-items: center; /* Выравнивание элементов по центру вертикали */
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-link {
+    padding: 8px 12px; /* Уменьшим размер кнопок */
+    background-color: #4fa2d9; /* Цвет Лиги Легенд */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Уменьшим размер шрифта */
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    background-color: #2a75a7; /* Цвет при наведении */
+}
+
+.content-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

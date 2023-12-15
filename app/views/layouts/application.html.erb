@@ -1,29 +1,38 @@
+<!-- app/views/layouts/application.html.erb -->
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Prog</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Prog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <div>
-      <% if user_signed_in? %>
-        <%= link_to "New blog post", new_blog_post_path %>
-        <%#= link_to "Profile", edit_user_registration_path %>
-        <%= button_to "Log_out", destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to "Log_in", new_user_session_path %>
-        <%= link_to "Sign_up", new_user_registration_path %>
-      <% end %>
-    </div>
-    <%= yield %>
-  </body>
+<body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<div class="header">
+  <div class="auth-links">
+    <% if user_signed_in? %>
+      <%= link_to "New blog post", new_blog_post_path, class: 'auth-link' %>
+      <%= button_to "Log_out", destroy_user_session_path, method: :delete, class: 'auth-link' %>
+      <%= link_to "Profile", user_profile_path, class: 'auth-link' %>
+    <% else %>
+      <%= link_to "Log_in", new_user_session_path, class: 'auth-link' %>
+      <%= link_to "Sign_up", new_user_registration_path, class: 'auth-link' %>
+    <% end %>
+  </div>
+</div>
+
+<div class="content-container">
+  <%= yield %>
+</div>
+</body>
 </html>

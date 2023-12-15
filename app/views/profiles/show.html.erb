@@ -1,0 +1,9 @@
+<!-- app/views/profiles/show.html.erb -->
+
+<h1>User Profile</h1>
+
+<p>Username: <%= @user.username %></p>
+<p>Email: <%= @user.email %></p>
+<p>Posts Count: <%= @posts_count %></p>
+
+<%= link_to 'Edit Profile', edit_user_profile_path %>
