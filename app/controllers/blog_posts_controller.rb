@@ -1,6 +1,9 @@
+# app/controllers/blog_posts_controller.rb
+
 class BlogPostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_blog_post, except: [:index, :new, :create]
+
   def index
     @blog_posts = BlogPost.all
   end
@@ -14,6 +17,8 @@ class BlogPostsController < ApplicationController
 
   def create
     @blog_post = BlogPost.new(blog_post_params)
+    @blog_post.user = current_user if user_signed_in?
+
     if @blog_post.save
       redirect_to @blog_post
     else
@@ -36,6 +41,7 @@ class BlogPostsController < ApplicationController
     @blog_post.destroy
     redirect_to root_path
   end
+
   private
 
   def blog_post_params
