@@ -7,7 +7,13 @@
 <% if @blog_post.image.attached? %>
   <%= image_tag url_for(@blog_post.image), alt: 'Blog Post Image', class: 'blog-post-image' %>
 <% end %>
+<h1>Комментарии</h1>
 
+<% @comments.each do |comment| %>
+  <p><%= comment.body %></p>
+<% end %>
+
+<%= link_to 'Назад', blog_post_path(@blog_post) %>
 <br><br>
 <%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
 <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>

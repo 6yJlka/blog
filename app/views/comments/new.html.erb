@@ -1,0 +1,7 @@
+<!-- app/views/comments/new.html.erb -->
+
+<h1>Новый комментарий</h1>
+
+<%= render 'form', comment: @comment %>
+
+<%= link_to 'Назад', blog_post_path(@blog_post) %>
