@@ -1,15 +1,6 @@
-<h1>Anonymous chat League of Legends</h1>
+<!-- app/views/blog_posts/index.html.erb -->
 
-<style>
-    .alert-danger {
-        color: #721c24;
-        background-color: #f8d7da;
-        border: 1px solid #f5c6cb;
-        padding: 0.75rem 1.25rem;
-        margin-bottom: 1rem;
-        border-radius: 0.25rem;
-    }
-</style>
+<h1>Anonymous chat League of Legends</h1>
 
 <% @blog_posts.each do |blog_post| %>
   <h2><%= blog_post.title %></h2>
@@ -24,5 +15,9 @@
 
   <br><br>
   <%= link_to "Edit", edit_blog_post_path(blog_post) if user_signed_in? %>
-<% end %>
 
+  <!-- Кнопки "Создать комментарий" и "Показать все комментарии" -->
+  <%= link_to "Create Comment", new_blog_post_comment_path(blog_post) %>
+  <%= link_to "Show Comments", blog_post_path(blog_post) %>
+
+<% end %>

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'comments/new'
+  get 'comments/create'
+  get 'comments/index'
   get 'profiles/show'
   devise_for :users
-
+  resources :blog_posts do
+    resources :comments, only: [:new, :create, :index]
+  end
   resources :blog_posts
   resource :profile, only: [:show, :edit, :update]
   # Defines the root path route ("/")
