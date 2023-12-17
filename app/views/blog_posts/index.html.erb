@@ -14,7 +14,9 @@
   </div>
 
   <br><br>
-  <%= link_to "Edit", edit_blog_post_path(blog_post) if user_signed_in? %>
+  <% if user_signed_in? && current_user == blog_post.user %>
+    <%= link_to "Edit", edit_blog_post_path(blog_post) %>
+  <% end %>
 
   <!-- Кнопки "Создать комментарий" и "Показать все комментарии" -->
   <%= link_to "Create Comment", new_blog_post_comment_path(blog_post) %>

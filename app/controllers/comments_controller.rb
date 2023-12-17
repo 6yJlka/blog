@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
   def create
     @blog_post = BlogPost.find(params[:blog_post_id])
     @comment = @blog_post.comments.new(comment_params)
+    @comment.user = current_user if user_signed_in?
     if @comment.save
       redirect_to root_path, notice: 'Комментарий успешно создан.'
     else

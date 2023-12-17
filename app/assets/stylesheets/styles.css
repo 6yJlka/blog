@@ -108,3 +108,21 @@ a:hover {
     border-radius: 5px;
 }
 
+.mini-avatar-container {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.mini-avatar {
+    width: 40px; /* Set the desired width for the mini avatar */
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(255, 181, 58);
+    transition: box-shadow 0.3s ease;
+}
+
+.mini-avatar-container:hover .mini-avatar {
+    box-shadow: 0 0 20px rgb(242, 141, 255);
+}
