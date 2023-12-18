@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_17_134701) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_18_114628) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -59,6 +59,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_17_134701) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "friends", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "friend_id", null: false
+    t.index ["friend_id"], name: "index_friends_on_friend_id"
+    t.index ["user_id"], name: "index_friends_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -78,4 +85,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_17_134701) do
   add_foreign_key "blog_posts", "users"
   add_foreign_key "comments", "blog_posts"
   add_foreign_key "comments", "users"
+  add_foreign_key "friends", "users"
+  add_foreign_key "friends", "users", column: "friend_id"
 end

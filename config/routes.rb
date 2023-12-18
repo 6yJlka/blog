@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   end
   resources :blog_posts
   resource :profile, only: [:show, :edit, :update]
+  resources :friends, only: [:index, :create, :destroy]
+
   # Defines the root path route ("/")
   get 'profile', to: 'profiles#show', as: 'user_profile'
   get 'profile/edit', to: 'profiles#edit', as: 'edit_user_profile'

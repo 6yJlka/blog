@@ -25,4 +25,4 @@
 <% if user_signed_in? && current_user == @blog_post.user %>
   <%= link_to "Edit", edit_blog_post_path(@blog_post), class: "btn btn-primary" %>
 <% end %>
-<%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>
+

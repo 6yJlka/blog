@@ -199,104 +199,104 @@
   </component>
   <component name="RailsPaths" isManagedAutomatically="true">
     <entry key="app">
-      <value>file://$MODULE_DIR$/../bloghjb\app</value>
+      <value>file://$MODULE_DIR$/../blog15\app</value>
     </entry>
     <entry key="app/assets">
-      <value>file://$MODULE_DIR$/../bloghjb\app/assets</value>
+      <value>file://$MODULE_DIR$/../blog15\app/assets</value>
     </entry>
     <entry key="app/channels">
-      <value>file://$MODULE_DIR$/../bloghjb\app/channels</value>
+      <value>file://$MODULE_DIR$/../blog15\app/channels</value>
     </entry>
     <entry key="app/controllers">
-      <value>file://$MODULE_DIR$/../bloghjb\app/controllers</value>
+      <value>file://$MODULE_DIR$/../blog15\app/controllers</value>
     </entry>
     <entry key="app/helpers">
-      <value>file://$MODULE_DIR$/../bloghjb\app/helpers</value>
+      <value>file://$MODULE_DIR$/../blog15\app/helpers</value>
     </entry>
     <entry key="app/mailers">
-      <value>file://$MODULE_DIR$/../bloghjb\app/mailers</value>
+      <value>file://$MODULE_DIR$/../blog15\app/mailers</value>
     </entry>
     <entry key="app/models">
-      <value>file://$MODULE_DIR$/../bloghjb\app/models</value>
+      <value>file://$MODULE_DIR$/../blog15\app/models</value>
     </entry>
     <entry key="app/views">
-      <value>file://$MODULE_DIR$/../bloghjb\app/views</value>
+      <value>file://$MODULE_DIR$/../blog15\app/views</value>
     </entry>
     <entry key="config">
-      <value>file://$MODULE_DIR$/../bloghjb\config</value>
+      <value>file://$MODULE_DIR$/../blog15\config</value>
     </entry>
     <entry key="config/cable">
-      <value>file://$MODULE_DIR$/../bloghjb\config/cable.yml</value>
+      <value>file://$MODULE_DIR$/../blog15\config/cable.yml</value>
     </entry>
     <entry key="config/database">
-      <value>file://$MODULE_DIR$/../bloghjb\config/database.yml</value>
+      <value>file://$MODULE_DIR$/../blog15\config/database.yml</value>
     </entry>
     <entry key="config/environment">
-      <value>file://$MODULE_DIR$/../bloghjb\config/environment.rb</value>
+      <value>file://$MODULE_DIR$/../blog15\config/environment.rb</value>
     </entry>
     <entry key="config/environments">
-      <value>file://$MODULE_DIR$/../bloghjb\config/environments</value>
+      <value>file://$MODULE_DIR$/../blog15\config/environments</value>
     </entry>
     <entry key="config/initializers">
-      <value>file://$MODULE_DIR$/../bloghjb\config/initializers</value>
+      <value>file://$MODULE_DIR$/../blog15\config/initializers</value>
     </entry>
     <entry key="config/locales">
-      <value>file://$MODULE_DIR$/../bloghjb\config/locales</value>
+      <value>file://$MODULE_DIR$/../blog15\config/locales</value>
     </entry>
     <entry key="config/routes">
-      <value>file://$MODULE_DIR$/../bloghjb\config/routes</value>
+      <value>file://$MODULE_DIR$/../blog15\config/routes</value>
     </entry>
     <entry key="config/routes.rb">
-      <value>file://$MODULE_DIR$/../bloghjb\config/routes.rb</value>
+      <value>file://$MODULE_DIR$/../blog15\config/routes.rb</value>
     </entry>
     <entry key="config/secrets">
-      <value>file://$MODULE_DIR$/../bloghjb\config</value>
+      <value>file://$MODULE_DIR$/../blog15\config</value>
     </entry>
     <entry key="db">
-      <value>file://$MODULE_DIR$/../bloghjb\db</value>
+      <value>file://$MODULE_DIR$/../blog15\db</value>
     </entry>
     <entry key="db/migrate">
-      <value>file://$MODULE_DIR$/../bloghjb\db/migrate</value>
+      <value>file://$MODULE_DIR$/../blog15\db/migrate</value>
     </entry>
     <entry key="db/seeds.rb">
-      <value>file://$MODULE_DIR$/../bloghjb\db/seeds.rb</value>
+      <value>file://$MODULE_DIR$/../blog15\db/seeds.rb</value>
     </entry>
     <entry key="lib">
-      <value>file://$MODULE_DIR$/../bloghjb\lib</value>
+      <value>file://$MODULE_DIR$/../blog15\lib</value>
     </entry>
     <entry key="lib/assets">
-      <value>file://$MODULE_DIR$/../bloghjb\lib/assets</value>
+      <value>file://$MODULE_DIR$/../blog15\lib/assets</value>
     </entry>
     <entry key="lib/tasks">
-      <value>file://$MODULE_DIR$/../bloghjb\lib/tasks</value>
+      <value>file://$MODULE_DIR$/../blog15\lib/tasks</value>
     </entry>
     <entry key="lib/templates">
-      <value>file://$MODULE_DIR$/../bloghjb\lib/templates</value>
+      <value>file://$MODULE_DIR$/../blog15\lib/templates</value>
     </entry>
     <entry key="log">
-      <value>file://$MODULE_DIR$/../bloghjb\log/development.log</value>
+      <value>file://$MODULE_DIR$/../blog15\log/development.log</value>
     </entry>
     <entry key="public">
-      <value>file://$MODULE_DIR$/../bloghjb\public</value>
+      <value>file://$MODULE_DIR$/../blog15\public</value>
     </entry>
     <entry key="public/javascripts">
-      <value>file://$MODULE_DIR$/../bloghjb\public/javascripts</value>
+      <value>file://$MODULE_DIR$/../blog15\public/javascripts</value>
     </entry>
     <entry key="public/stylesheets">
-      <value>file://$MODULE_DIR$/../bloghjb\public/stylesheets</value>
+      <value>file://$MODULE_DIR$/../blog15\public/stylesheets</value>
     </entry>
     <entry key="test/mailers/previews">
       <value>file://$MODULE_DIR$/test/mailers/previews</value>
-      <value>file://$MODULE_DIR$/../bloghjb\test/mailers/previews</value>
+      <value>file://$MODULE_DIR$/../blog15\test/mailers/previews</value>
     </entry>
     <entry key="tmp">
-      <value>file://$MODULE_DIR$/../bloghjb\tmp</value>
+      <value>file://$MODULE_DIR$/../blog15\tmp</value>
     </entry>
     <entry key="vendor">
-      <value>file://$MODULE_DIR$/../bloghjb\vendor</value>
+      <value>file://$MODULE_DIR$/../blog15\vendor</value>
     </entry>
     <entry key="vendor/assets">
-      <value>file://$MODULE_DIR$/../bloghjb\vendor/assets</value>
+      <value>file://$MODULE_DIR$/../blog15\vendor/assets</value>
     </entry>
   </component>
   <component name="RakeTasksCache">
