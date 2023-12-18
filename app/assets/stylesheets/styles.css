@@ -126,3 +126,66 @@ a:hover {
 .mini-avatar-container:hover .mini-avatar {
     box-shadow: 0 0 20px rgb(242, 141, 255);
 }
+
+/* Стиль для контейнера друзей */
+.friend-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/* Стиль для кнопок "Add Friend" и "Remove" */
+.friend-buttons {
+    margin-left: 1px;
+    margin-bottom: 2px;
+    background-color: #4caf50; /* зеленый цвет для кнопки отправки */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blog-buttons {
+    margin-left: 1px;
+    margin-bottom: 2px;
+    background-color: #4caf50; /* зеленый цвет для кнопки отправки */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blog-buttons-message {
+    margin-left: 1px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background-color: #4caf50; /* зеленый цвет для кнопки отправки */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Стиль для кнопки выбора файла */
+.file-input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file-input-label {
+    display: inline-block;
+
+    color: #4caf50; /* Установите нужный цвет текста */
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
