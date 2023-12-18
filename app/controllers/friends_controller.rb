@@ -8,9 +8,16 @@ class FriendsController < ApplicationController
 
   def create
     friend = User.find(params[:friend_id])
+
+    # Добавить друга в список друзей текущего пользователя
     current_user.friends << friend unless current_user.friends.include?(friend)
+
+    # Добавить текущего пользователя в список друзей друга
+    friend.friends << current_user unless friend.friends.include?(current_user)
+
     redirect_to friends_path
   end
+
 
   def destroy
     friend = User.find(params[:id])
