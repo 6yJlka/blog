@@ -5,6 +5,10 @@ class User < ApplicationRecord
   attribute :avatar, :binary
   has_one_attached :avatar
 
+  has_many :sent_messages, class_name: 'Message', foreign_key: 'sender_id', dependent: :destroy
+  has_many :received_messages, class_name: 'Message', foreign_key: 'recipient_id', dependent: :destroy
+
+
   has_and_belongs_to_many :friends,
                           class_name: 'User',
                           join_table: :friends,
