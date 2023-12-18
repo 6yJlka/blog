@@ -23,10 +23,10 @@
 
   <div>
     <%= form.label :image, 'Attach Image' %>
-    <%= form.file_field :image, accept: 'image/*' %>
+    <%= form.file_field :image, accept: 'image/*', class: 'file-input' %>
   </div>
 
   <div>
-    <%= form.button %>
+    <%= form.button class: "blog-buttons" %>
   </div>
 <% end %>

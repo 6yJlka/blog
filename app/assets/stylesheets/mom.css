@@ -1,0 +1,43 @@
+.message-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+/* Стили для меток в форме */
+.message-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Стили для выпадающего списка выбора получателя */
+.message-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для текстового поля сообщения */
+.message-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки отправки сообщения */
+.message-form input[type="submit"] {
+    background-color: #4caf50; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

@@ -1,14 +1,15 @@
-<!-- app/views/messages/new.html.erb -->
+<%= stylesheet_link_tag 'mom' %>
+
 <h1>New Message</h1>
 
-<%= form_with(model: @message, url: messages_path, method: :post) do |form| %>
+<%= form_with(model: @message, url: messages_path, method: :post, html: { class: 'message-form' }) do |form| %>
   <%= form.label :recipient_id, 'Recipient' %>
   <%= form.collection_select :recipient_id, User.where.not(id: current_user.id), :id, :username, prompt: 'Select a recipient' %>
 
   <%= form.label :content, 'Message' %>
   <%= form.text_area :content, rows: 5 %>
 
-  <%= form.submit 'Send Message', class: 'btn btn-primary' %>
+  <%= form.submit 'Send Message', class: 'blog-buttons' %>
 <% end %>
 
-<%= link_to 'Back to Messages', messages_path, class: 'btn btn-secondary' %>
+<%= link_to 'Back to Messages', messages_path, class: 'blog-buttons-message' %>
