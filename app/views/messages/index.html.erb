@@ -1,0 +1,32 @@
+<!-- app/views/messages/index.html.erb -->
+<h1>Your Messages</h1>
+
+<h2>Received Messages</h2>
+<% if @received_messages.any? %>
+  <ul>
+    <% @received_messages.each do |message| %>
+      <li>
+        <%= message.sender.username %>:
+        <%= message.content %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No received messages.</p>
+<% end %>
+
+<h2>Sent Messages</h2>
+<% if @sent_messages.any? %>
+  <ul>
+    <% @sent_messages.each do |message| %>
+      <li>
+        To <%= message.recipient.username %>:
+        <%= message.content %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No sent messages.</p>
+<% end %>
+
+<%= link_to 'Compose Message', new_message_path, class: 'btn btn-primary' %>
